@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Custom Objects (includes fields, validation rules, buttons inside object) -->
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Apex Classes (includes test classes) -->
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Apex Triggers -->
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Lightning Web Components -->
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+   
+    <!-- Flows -->
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Custom Tabs -->
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+
+    
+    <!-- Layouts -->
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+
+     <types>
+        <members>*</members>
+        <name>ReportFolder</name>
+    </types>
+
+    <types>
+        <members>Public_Reports/New_Lease_Report_vq4</members>
+        <members>Public_Reports/MaintainceRequestReport</members>
+        <members>Public_Reports/New_Properties_Report_CmX</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>Real_Estate/YXLuEvsETTQrEjHuFgdcJwPWHwWCuR</members>
+        <name>Dashboard</name>
+    </types>
+
+    
+
+    <version>60.0</version>
+</Package>

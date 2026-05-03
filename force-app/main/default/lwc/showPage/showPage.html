@@ -1,0 +1,73 @@
+<template>
+    <lightning-card title="Property Management">
+
+       
+        <template if:true={loading}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+
+       
+        <div class="slds-m-around_medium">
+
+            <lightning-input type="number" label="Min Price"
+                onchange={handleMinPrice}></lightning-input>
+
+            <lightning-input type="number" label="Max Price"
+                onchange={handleMaxPrice}></lightning-input>
+
+            <lightning-combobox label="Availability Status"
+                value={status}
+                options={statusOptions}
+                onchange={handleStatus}>
+            </lightning-combobox>
+
+            <lightning-combobox label="Furnishing Status"
+                value={furnishing}
+                options={furnishingOptions}
+                onchange={handleFurnishing}>
+            </lightning-combobox>
+
+            <lightning-button label="Search"
+                onclick={handleSearch}
+                class="slds-m-top_small">
+            </lightning-button>
+
+            <lightning-button label="Reset"
+                onclick={handleReset}
+                class="slds-m-top_small slds-m-left_small">
+            </lightning-button>
+
+        </div>
+
+        <lightning-datatable
+            key-field="Id"
+            data={property}
+            columns={columns}>
+        </lightning-datatable>
+
+       
+        <div class="slds-m-around_medium">
+            Showing {startRecord} to {endRecord} of {totalRecords}
+        </div>
+
+      
+        <div class="slds-m-around_medium">
+            <lightning-button label="Previous"
+                onclick={previousHandler}
+                disabled={disablePrev}>
+            </lightning-button>
+
+            <lightning-button label="Next"
+                onclick={nextHandler}
+                disabled={disableNext}
+                class="slds-m-left_small">
+            </lightning-button>
+        </div>
+
+      
+        <div class="slds-m-around_medium">
+            Page {pageNumber} of {totalPages}
+        </div>
+
+    </lightning-card>
+</template>
