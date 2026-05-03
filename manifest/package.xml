@@ -49,6 +49,10 @@
         <members>*</members>
         <name>ReportFolder</name>
     </types>
+    <types>
+    <members>Active_Tenant</members>
+    <name>Flow</name>
+    </types>
 
     <types>
         <members>Public_Reports/New_Lease_Report_vq4</members>
